@@ -3,17 +3,22 @@ variable "access_name" {
   description = "Name of Firewall Rule"
 }
 
-variable "resource_group" {
+variable "network" {
   type        = "string"
-  description = "Name of Azure RG"
+  description = "Name of Azure Network Workspace"
 }
 
-variable "db_server_name" {
+variable "db" {
   type        = "string"
-  description = "Name of Azure DB"
+  description = "Name of Azure DB Workspace"
 }
 
 variable "ip_address" {
   type        = "string"
   description = "IP Address for Access Rule"
+}
+
+variable "organization" {
+  type        = "string"
+  description = "Name of TFE Workspace"
 }
